@@ -4,6 +4,7 @@ var topStudents = [
   {no: 345, name: "Bill", grade: 93}
 ]
 
+
 // console.log(`${topStudents[0].name},${topStudents[1].name},${topStudents[2].name}`);
 
 
@@ -16,10 +17,17 @@ var topStudents = [
 // console.log(result.slice(0, -1));
 
 
-let result = [];
+// let result = [];
 
-for (let i = 0; i < topStudents.length; i++) {
-  result.push(topStudents[i].name);
-}
+// for (let i = 0; i < topStudents.length; i++) {
+//   result.push(topStudents[i].name);
+// }
 
-console.log(String(result));
+// console.log(String(result));
+
+
+
+var arr = [7, 3, 5, 9];
+
+
+console.log(arr.reverse().find(n => n % 3));  // 5
