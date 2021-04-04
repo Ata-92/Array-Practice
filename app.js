@@ -7,10 +7,19 @@ var topStudents = [
 // console.log(`${topStudents[0].name},${topStudents[1].name},${topStudents[2].name}`);
 
 
-let result = "";
+// let result = "";
 
-for (let obj of topStudents) {
-  result += obj.name + ",";
+// for (let obj of topStudents) {
+//   result += obj.name + ",";
+// }
+
+// console.log(result.slice(0, -1));
+
+
+let result = [];
+
+for (let i = 0; i < topStudents.length; i++) {
+  result.push(topStudents[i].name);
 }
 
-console.log(result.slice(0, -1));
+console.log(String(result));
