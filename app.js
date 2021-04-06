@@ -56,8 +56,20 @@
 
 
 
-var x = ["a", "b", "c"];
-var y = ["a", "b", "c"];
-console.log(x == y);
-console.log(x.reverse() === x.reverse());
-console.log(x);
+// var x = ["a", "b", "c"];
+// var y = ["a", "b", "c"];
+// console.log(x == y);
+// console.log(x.reverse() === x.reverse());
+// console.log(x);
+
+
+
+function spec_opr(...numbers) {
+  let sum = 0;
+  for (const number of numbers) {
+    number % 2 === 0 ? sum += number / 2 : sum += number * 3;
+  }
+  console.log(sum);
+}
+
+spec_opr(93, 12, "5", 84, -22)
