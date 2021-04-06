@@ -44,12 +44,20 @@
 
 
 
-var price = [
-  {pr$: 700, name: "pc"},
-  {pr$: 30, name: "book"},
-  {pr$: 90, name: "pen"}
-];
+// var price = [
+//   {pr$: 700, name: "pc"},
+//   {pr$: 30, name: "book"},
+//   {pr$: 90, name: "pen"}
+// ];
 
-const lower100 = price.map(n => n.pr$ < 100 && console.log(n));
+// const lower100 = price.map(n => n.pr$ < 100 && console.log(n));
 
 // console.log(lower100);
+
+
+
+var x = ["a", "b", "c"];
+var y = ["a", "b", "c"];
+console.log(x == y);
+console.log(x.reverse() === x.reverse());
+console.log(x);
