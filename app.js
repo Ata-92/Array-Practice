@@ -34,10 +34,22 @@
 
 
 
-(function (inputString) {
-  let outputString = "";
-  for (const char of inputString) {
-    char == char.toLocaleLowerCase() ? outputString += char.toLocaleUpperCase() : outputString += char.toLocaleLowerCase();
-  }
-  console.log(outputString);
-})("The Quick Brown Fox")
+// (function (inputString) {
+//   let outputString = "";
+//   for (const char of inputString) {
+//     char == char.toLocaleLowerCase() ? outputString += char.toLocaleUpperCase() : outputString += char.toLocaleLowerCase();
+//   }
+//   console.log(outputString);
+// })("The Quick Brown Fox")
+
+
+
+var price = [
+  {pr$: 700, name: "pc"},
+  {pr$: 30, name: "book"},
+  {pr$: 90, name: "pen"}
+];
+
+const lower100 = price.map(n => n.pr$ < 100 && console.log(n));
+
+// console.log(lower100);
