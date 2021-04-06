@@ -59,7 +59,7 @@
 // var x = ["a", "b", "c"];
 // var y = ["a", "b", "c"];
 // console.log(x == y);
-// console.log(x.reverse() === x.reverse());
+// console.log(x === x.reverse());
 // console.log(x);
 
 
@@ -72,4 +72,4 @@ function spec_opr(...numbers) {
   console.log(sum);
 }
 
-spec_opr(93, 12, "5", 84, -22)
+spec_opr(93, 12, "5", 84, -22);
