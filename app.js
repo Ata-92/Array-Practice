@@ -76,6 +76,14 @@
 
 
 
-const $ = [10, 100];
-const euro = $.forEach(n => console.log(n * 0.82));
-console.log(euro);
+// const $ = [10, 100];
+// const euro = $.forEach(n => console.log(n * 0.82));
+// console.log(euro);
+
+
+
+const word = prompt("Enter a word : ");
+const seperator = prompt("Enter a seperator : ");
+const repetition = parseInt(prompt("Enter a repetition : "));
+
+alert(`Your output is ${(word + seperator).repeat(repetition).slice(0, -1)}`);
