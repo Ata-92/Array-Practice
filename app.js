@@ -64,12 +64,18 @@
 
 
 
-function spec_opr(...numbers) {
-  let sum = 0;
-  for (const number of numbers) {
-    number % 2 === 0 ? sum += number / 2 : sum += number * 3;
-  }
-  console.log(sum);
-}
+// function spec_opr(...numbers) {
+//   let sum = 0;
+//   for (const number of numbers) {
+//     number % 2 === 0 ? sum += number / 2 : sum += number * 3;
+//   }
+//   console.log(sum);
+// }
 
-spec_opr(93, 12, "5", 84, -22);
+// spec_opr(93, 12, "5", 84, -22);
+
+
+
+const $ = [10, 100];
+const euro = $.forEach(n => console.log(n * 0.82));
+console.log(euro);
