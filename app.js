@@ -82,8 +82,21 @@
 
 
 
-const word = prompt("Enter a word : ");
-const seperator = prompt("Enter a seperator : ");
-const repetition = parseInt(prompt("Enter a repetition : "));
+// const word = prompt("Enter a word : ");
+// const seperator = prompt("Enter a seperator : ");
+// const repetition = parseInt(prompt("Enter a repetition : "));
 
-alert(`Your output is ${(word + seperator).repeat(repetition).slice(0, -1)}`);
+// alert(`Your output is ${(word + seperator).repeat(repetition).slice(0, -1)}`);
+
+
+function smt(word, seperator, rep) {
+  let a = []
+  i=0
+  while (i < rep) {
+    a.push(word)
+    i++
+  }
+  return a.join(seperator)
+}
+
+console.log(smt("ata", "/", 3));
