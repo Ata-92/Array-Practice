@@ -89,14 +89,26 @@
 // alert(`Your output is ${(word + seperator).repeat(repetition).slice(0, -1)}`);
 
 
-function smt(word, seperator, rep) {
-  let a = []
-  i=0
-  while (i < rep) {
-    a.push(word)
-    i++
-  }
-  return a.join(seperator)
-}
+// function smt(word, seperator, rep) {
+//   let a = []
+//   i=0
+//   while (i < rep) {
+//     a.push(word)
+//     i++
+//   }
+//   return a.join(seperator)
+// }
 
-console.log(smt("ata", "/", 3));
+// console.log(smt("ata", "/", 3));
+
+
+
+(function (x, y) {
+  let cd = [];
+  for (let i = 1; i <= x; i++ ) {
+    if (x % i == 0 && y % i == 0) {
+      cd.push(i);
+    }
+  }
+  alert(`The greatest common divisor is ${cd[cd.length - 1]}`);
+})(prompt("Enter first number : "), prompt("Enter second number : "));
