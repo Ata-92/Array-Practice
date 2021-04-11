@@ -103,12 +103,22 @@
 
 
 
-(function (x, y) {
-  let cd = [];
-  for (let i = 1; i <= x; i++ ) {
-    if (x % i == 0 && y % i == 0) {
-      cd.push(i);
-    }
+// (function (x, y) {
+//   let cd = [];
+//   for (let i = 1; i <= x; i++ ) {
+//     if (x % i == 0 && y % i == 0) {
+//       cd.push(i);
+//     }
+//   }
+//   alert(`The greatest common divisor is ${cd[cd.length - 1]}`);
+// })(prompt("Enter first number : "), prompt("Enter second number : "));
+
+
+
+for (let i = 1; i <= 1000; i++) {
+  let sum = 0;
+  for (let j = 1; j < i; j++) {
+    if (i % j == 0) sum += j;
   }
-  alert(`The greatest common divisor is ${cd[cd.length - 1]}`);
-})(prompt("Enter first number : "), prompt("Enter second number : "));
+  if (sum == i || i == 1) console.log(i);
+}
