@@ -125,6 +125,13 @@
 
 
 
-const arr = [ [[1,2], [-1,-2]], ["a", "b"] ];
-const newArr = [arr[0][0][0], arr[0][0][1], arr[0][1][0], arr[0][1][1], arr[1][0], arr[1][1]];
-console.log(newArr);
+// const arr = [ [[1,2], [-1,-2]], ["a", "b"] ];
+// const newArr = [arr[0][0][0], arr[0][0][1], arr[0][1][0], arr[0][1][1], arr[1][0], arr[1][1]];
+// console.log(newArr);
+
+
+
+(function (word) {
+  let reversedWord = word.split("").reverse().join("");
+  word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
+})(prompt("Please enter a word : "));
