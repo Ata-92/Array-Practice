@@ -137,9 +137,18 @@
 // })(prompt("Please enter a word : "));
 
 
+// function palindrome(word) {
+//   let reversedWord = word.split("").reverse().join("");
+//   word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
+// }
+
+// palindrome(prompt("Please enter a word : "));
+
+
 function palindrome(word) {
   let reversedWord = word.split("").reverse().join("");
   word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
 }
 
-palindrome(prompt("Please enter a word : "));
+const theWord = prompt("Please enter a word : ");
+palindrome(theWord);
