@@ -131,9 +131,9 @@
 
 
 
-(function (word) {
-  word == word.split("").reverse().join("") ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
-})(prompt("Please enter a word : "));
+// (function (word) {
+//   word == word.split("").reverse().join("") ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
+// })(prompt("Please enter a word : "));
 
 
 // function palindrome(word) {
@@ -151,5 +151,3 @@
 
 // const theWord = prompt("Please enter a word : ");
 // palindrome(theWord);
-
-
