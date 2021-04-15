@@ -115,10 +115,16 @@
 
 
 
-for (let i = 1; i <= 1000; i++) {
-  let sum = 0;
-  for (let j = 1; j < i; j++) {
-    if (i % j == 0) sum += j;
-  }
-  if (sum == i || i == 1) console.log(i);
-}
+// for (let i = 1; i <= 1000; i++) {
+//   let sum = 0;
+//   for (let j = 1; j < i; j++) {
+//     if (i % j == 0) sum += j;
+//   }
+//   if (sum == i || i == 1) console.log(i);
+// }
+
+
+
+const arr = [ [[1,2], [-1,-2]], ["a", "b"] ];
+const newArr = [arr[0][0][0], arr[0][0][1], arr[0][1][0], arr[0][1][1], arr[1][0], arr[1][1]];
+console.log(newArr);
