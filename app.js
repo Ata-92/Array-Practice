@@ -131,10 +131,9 @@
 
 
 
-// (function (word) {
-//   let reversedWord = word.split("").reverse().join("");
-//   word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
-// })(prompt("Please enter a word : "));
+(function (word) {
+  word == word.split("").reverse().join("") ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
+})(prompt("Please enter a word : "));
 
 
 // function palindrome(word) {
@@ -145,10 +144,12 @@
 // palindrome(prompt("Please enter a word : "));
 
 
-function palindrome(word) {
-  let reversedWord = word.split("").reverse().join("");
-  word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
-}
+// function palindrome(word) {
+//   let reversedWord = word.split("").reverse().join("");
+//   word == reversedWord ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
+// }
 
-const theWord = prompt("Please enter a word : ");
-palindrome(theWord);
+// const theWord = prompt("Please enter a word : ");
+// palindrome(theWord);
+
+
