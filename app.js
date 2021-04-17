@@ -125,11 +125,11 @@
 
 
 
-const arr = [ [[1,2], [-1,-2]], ["a", "b"] ];
-const newArr = [arr[0][0][0], arr[0][0][1], arr[0][1][0], arr[0][1][1], arr[1][0], arr[1][1]];
+// const arr = [ [[1,2], [-1,-2]], ["a", "b"] ];
+// const newArr = [arr[0][0][0], arr[0][0][1], arr[0][1][0], arr[0][1][1], arr[1][0], arr[1][1]];
 // console.log(newArr);
 
-console.log(arr.flat(2));
+// console.log(arr.flat(2));
 
 // (function (word) {
 //   word == word.split("").reverse().join("") ? alert(`Your word ${word} is a palindrome`) : alert(`Your word ${word} is not a palindrome\nTry again`);
@@ -151,3 +151,20 @@ console.log(arr.flat(2));
 
 // const theWord = prompt("Please enter a word : ");
 // palindrome(theWord);
+
+
+
+let operations = ["5 + 6", "2 * 3", "8 / 4", "4 - 5"];
+operations = ["3 + 4", "3 * 4", "4 * 5"];
+
+for (let i = 0; i < operations.length; i++) {
+    if (operations[i].includes("+")) {
+        console.log(parseFloat(operations[i][0]) + parseFloat(operations[i][operations[i].length - 1]));
+    } else if (operations[i].includes("-")) {
+        console.log(operations[i][0] - operations[i][operations[i].length - 1]);
+    } else if (operations[i].includes("*")) {
+        console.log(operations[i][0] * operations[i][operations[i].length - 1]);
+    } else if (operations[i].includes("/")) {
+        console.log(operations[i][0] / operations[i][operations[i].length - 1]);
+    }
+}
