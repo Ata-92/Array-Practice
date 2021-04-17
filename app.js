@@ -155,16 +155,16 @@
 
 
 let operations = ["5 + 6", "2 * 3", "8 / 4", "4 - 5"];
-operations = ["3 + 4", "3 * 4", "4 * 5"];
+operations = [" 30+  4 ", "30 * 40", "400 /50"];
 
 for (let i = 0; i < operations.length; i++) {
     if (operations[i].includes("+")) {
-        console.log(parseFloat(operations[i][0]) + parseFloat(operations[i][operations[i].length - 1]));
+        console.log(parseFloat(operations[i].split("+")[0]) + parseFloat(operations[i].split("+")[1]));
     } else if (operations[i].includes("-")) {
-        console.log(operations[i][0] - operations[i][operations[i].length - 1]);
+        console.log(operations[i].split("-")[0] - operations[i].split("-")[1]);
     } else if (operations[i].includes("*")) {
-        console.log(operations[i][0] * operations[i][operations[i].length - 1]);
+        console.log(operations[i].split("*")[0] * operations[i].split("*")[1]);
     } else if (operations[i].includes("/")) {
-        console.log(operations[i][0] / operations[i][operations[i].length - 1]);
+        console.log(operations[i].split("/")[0] / operations[i].split("/")[1]);
     }
 }
