@@ -177,4 +177,5 @@ function Color(a, b, c) {
     this.b = c;
   }
 
-
+  const {r, g, b} = new Color(5, 6, 7);
+  console.log({r, g, b});
