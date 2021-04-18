@@ -154,17 +154,27 @@
 
 
 
-let operations = ["5 + 6", "2 * 3", "8 / 4", "4 - 5"];
-operations = [" 30+  4 ", "30 * 40", "400 /50"];
+// let operations = ["5 + 6", "2 * 3", "8 / 4", "4 - 5"];
+// operations = [" 30+  4 ", "30 * 40", "400 /50"];
 
-for (let i = 0; i < operations.length; i++) {
-    if (operations[i].includes("+")) {
-        console.log(parseFloat(operations[i].split("+")[0]) + parseFloat(operations[i].split("+")[1]));
-    } else if (operations[i].includes("-")) {
-        console.log(operations[i].split("-")[0] - operations[i].split("-")[1]);
-    } else if (operations[i].includes("*")) {
-        console.log(operations[i].split("*")[0] * operations[i].split("*")[1]);
-    } else if (operations[i].includes("/")) {
-        console.log(operations[i].split("/")[0] / operations[i].split("/")[1]);
-    }
-}
+// for (let i = 0; i < operations.length; i++) {
+//     if (operations[i].includes("+")) {
+//         console.log(parseFloat(operations[i].split("+")[0]) + parseFloat(operations[i].split("+")[1]));
+//     } else if (operations[i].includes("-")) {
+//         console.log(operations[i].split("-")[0] - operations[i].split("-")[1]);
+//     } else if (operations[i].includes("*")) {
+//         console.log(operations[i].split("*")[0] * operations[i].split("*")[1]);
+//     } else if (operations[i].includes("/")) {
+//         console.log(operations[i].split("/")[0] / operations[i].split("/")[1]);
+//     }
+// }
+
+
+
+function Color(a, b, c) {
+    this.r = a;
+    this.g = b;
+    this.b = c;
+  }
+
+
