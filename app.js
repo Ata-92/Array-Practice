@@ -171,15 +171,25 @@
 
 
 
-function Color(a, b, c) {
-    this.r = a;
-    this.g = b;
-    this.b = c;
-}
+// function Color(a, b, c) {
+//     this.r = a;
+//     this.g = b;
+//     this.b = c;
+// }
 
-const {r, g, b} = new Color(5, 6, 7);
-console.log({r, g, b});
+// const {r, g, b} = new Color(5, 6, 7);
+// console.log({r, g, b});
 
 
-const {a, c, d} = {a: 5, c: 6, d: 7};
-console.log({a, c, d});
+// const {a, c, d} = {a: 5, c: 6, d: 7};
+// console.log({a, c, d});
+
+
+
+const lineItems = [
+    { description: 'Eggs (Dozen)', quantity: 1, price: 3, total: 3 },
+    { description: 'Cheese', quantity: 0.5, price: 5, total: 2.5 },
+    { description: 'Butter', quantity: 2, price: 6, total: 12 }
+];
+
+console.log(lineItems.reduce((acc, curr) => acc + curr.total, 0));
