@@ -231,4 +231,8 @@
 
 const scores = new Map();
 
+for (let i = 1; i < 6; i++) {
+  const objects = {};
+}
 
+console.log(scores);
