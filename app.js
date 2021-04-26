@@ -233,6 +233,9 @@ const scores = new Map();
 
 for (let i = 1; i < 6; i++) {
   const objects = {};
+  for (let j = 1; j < 6; j++) {
+      objects[`Lesson-${j}`] = Math.floor(Math.random() * (100 - 35 + 1) + 35);
+  }
+
 }
 
-console.log(scores);
