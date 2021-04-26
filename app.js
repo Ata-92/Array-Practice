@@ -205,7 +205,18 @@
 
 
 
-const text = "Maradona spent 5 years at Argentinos Juniors, from 1976 to 1981 , scoring 115 goals in 167 appearances.";
+// const text = "Maradona spent 5 years at Argentinos Juniors, from 1976 to 1981 , scoring 115 goals in 167 appearances.";
 
-const numbers = text.split(" ").filter((i) => i > 150).sort();
-console.log(numbers);
+// const numbers = text.split(" ").filter((i) => i > 150).sort();
+// console.log(numbers);
+
+
+
+const numberList = [10, 15, 3, 7];
+const k = 17;
+
+for (let i = 0; i < numberList.length; i++) {
+    for (let j = numberList.length; j > i ; j--) {
+        if (numberList[i] + numberList[j] === k) console.log(true);
+    }
+}
