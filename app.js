@@ -212,11 +212,23 @@
 
 
 
-const numberList = [10, 15, 3, 7];
-const k = 17;
+// const numberList = [10, 15, 3, 7];
+// const k = 17;
 
-for (let i = 0; i < numberList.length; i++) {
-    for (let j = numberList.length; j > i ; j--) {
-        if (numberList[i] + numberList[j] === k) console.log(true);
-    }
-}
+// for (let i = 0; i < numberList.length; i++) {
+//     for (let j = numberList.length; j > i ; j--) {
+//         if (numberList[i] + numberList[j] === k) console.log(true);
+//     }
+// }
+
+// function g() {
+//     var f = 4;
+//     console.log(f);
+// }
+// console.log(f)
+
+
+
+const scores = new Map();
+
+
