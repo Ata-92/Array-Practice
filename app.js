@@ -196,9 +196,16 @@
 
 
 
-const list1 = [11, 4, 5, 9, 7];
-const list2 = [5, 10, 4, 1, 10];
-const list3 = [7, 3, 9, 5, 1];
+// const list1 = [11, 4, 5, 9, 7];
+// const list2 = [5, 10, 4, 1, 10];
+// const list3 = [7, 3, 9, 5, 1];
 
-const intersection = list1.filter((i) => list2.includes(i) && list3.indexOf(i) !== -1);
-console.log(intersection);
+// const intersection = list1.filter((i) => list2.includes(i) && list3.indexOf(i) !== -1);
+// console.log(intersection);
+
+
+
+const text = "Maradona spent 5 years at Argentinos Juniors, from 1976 to 1981 , scoring 115 goals in 167 appearances.";
+
+const numbers = text.split(" ").filter((i) => i > 150).sort();
+console.log(numbers);
