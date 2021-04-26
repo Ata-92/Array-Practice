@@ -186,10 +186,19 @@
 
 
 
-const lineItems = [
-    { description: 'Eggs (Dozen)', quantity: 1, price: 3, total: 3 },
-    { description: 'Cheese', quantity: 0.5, price: 5, total: 2.5 },
-    { description: 'Butter', quantity: 2, price: 6, total: 12 }
-];
+// const lineItems = [
+//     { description: 'Eggs (Dozen)', quantity: 1, price: 3, total: 3 },
+//     { description: 'Cheese', quantity: 0.5, price: 5, total: 2.5 },
+//     { description: 'Butter', quantity: 2, price: 6, total: 12 }
+// ];
 
-console.log(lineItems.reduce((acc, curr) => acc + curr.total, 0));
+// console.log(lineItems.reduce((acc, curr) => acc + curr.total, 0));
+
+
+
+const list1 = [11, 4, 5, 9, 7];
+const list2 = [5, 10, 4, 1, 10];
+const list3 = [7, 3, 9, 5, 1];
+
+const intersection = list1.filter((i) => list2.includes(i) && list3.indexOf(i) !== -1);
+console.log(intersection);
