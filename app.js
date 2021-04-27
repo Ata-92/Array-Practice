@@ -239,4 +239,4 @@ for (let i = 1; i < 6; i++) {
   scores.set(`Student-${i}`, objects);
 }
 
-
+console.log(Object.fromEntries(scores));
