@@ -248,6 +248,9 @@ function multiplier(arr) {
   for (let i = 0; i < arr.length; i++) {
     let k = arr[i];
     arr[i] = 1;
+    for (let j = 0; j < arr.length; j++) {
+      if (j !== i) arr[i] *= arr[j];
+    }
 
   }
 
