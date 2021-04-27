@@ -245,5 +245,12 @@
 
 function multiplier(arr) {
   let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let k = arr[i];
+    arr[i] = 1;
+
+  }
 
 }
+
+
