@@ -251,9 +251,10 @@ function multiplier(arr) {
     for (let j = 0; j < arr.length; j++) {
       if (j !== i) arr[i] *= arr[j];
     }
-
+    newArr.push(arr[i]);
+    arr[i] = k;
   }
-
+  return newArr;
 }
 
-
+console.log(multiplier([1, 2, 3, 4, 5]));
