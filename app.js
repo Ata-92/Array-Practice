@@ -243,18 +243,28 @@
 
 
 
-function multiplier(arr) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    let k = arr[i];
-    arr[i] = 1;
-    for (let j = 0; j < arr.length; j++) {
-      if (j !== i) arr[i] *= arr[j];
-    }
-    newArr.push(arr[i]);
-    arr[i] = k;
+// function multiplier(arr) {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let k = arr[i];
+//     arr[i] = 1;
+//     for (let j = 0; j < arr.length; j++) {
+//       if (j !== i) arr[i] *= arr[j];
+//     }
+//     newArr.push(arr[i]);
+//     arr[i] = k;
+//   }
+//   return newArr;
+// }
+
+// console.log(multiplier([1, 2, 3, 4, 5]));
+
+
+
+function missingPositiveInteger(arr) {
+  for (let i = 1; i <= arr.length; i++) {
+    if (!arr.includes(i)) return i;
   }
-  return newArr;
 }
 
-console.log(multiplier([1, 2, 3, 4, 5]));
+console.log(missingPositiveInteger([3, 4, -1, 1]));
