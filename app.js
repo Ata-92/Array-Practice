@@ -265,6 +265,7 @@ function missingPositiveInteger(arr) {
   for (let i = 1; i <= arr.length; i++) {
     if (!arr.includes(i)) return i;
   }
+  return ++arr.length;
 }
 
-console.log(missingPositiveInteger([3, 4, -1, 1]));
+console.log(missingPositiveInteger([1, 2, 3]));
