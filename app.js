@@ -272,6 +272,14 @@
 
 
 
-let numbers = Array.from({length: 6}, (_, i) => i);
-numbers.shift(0);
-console.log(numbers);
+// let numbers = Array.from({length: 6}, (_, i) => i);
+// numbers.shift(0);
+// console.log(numbers);
+
+
+
+let numbers = (start, stop, step) => {
+  return Array.from({length: Math.ceil((stop - start) / step)},
+  (_, i) => {return start + i * step})
+}
+console.log(numbers(1, 10, 2));
