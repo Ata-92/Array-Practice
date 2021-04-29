@@ -261,11 +261,17 @@
 
 
 
-function missingPositiveInteger(arr) {
-  for (let i = 1; i <= arr.length; i++) {
-    if (!arr.includes(i)) return i;
-  }
-  return ++arr.length;
-}
+// function missingPositiveInteger(arr) {
+//   for (let i = 1; i <= arr.length; i++) {
+//     if (!arr.includes(i)) return i;
+//   }
+//   return ++arr.length;
+// }
 
-console.log(missingPositiveInteger([1, 2, 3]));
+// console.log(missingPositiveInteger([1, 2, 3]));
+
+
+
+let numbers = Array.from({length: 6}, (_, i) => i);
+numbers.shift(0);
+console.log(numbers);
