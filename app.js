@@ -278,8 +278,16 @@
 
 
 
-let numbers = (start, stop, step) => {
-  return Array.from({length: Math.ceil((stop - start) / step)},
-  (_, i) => {return start + i * step})
-}
+// let numbers = (start, stop, step) => {
+//   return Array.from({length: Math.ceil((stop - start) / step)},
+//   (_, i) => {return start + i * step});
+// }
+// console.log(numbers(1, 10, 2));
+
+
+
+let numbers = (start, stop, step) =>
+ Array.from({length: Math.ceil((stop - start) / step)},
+ (_, i) => start + i * step);
+
 console.log(numbers(1, 10, 2));
