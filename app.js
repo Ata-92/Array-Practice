@@ -118,9 +118,9 @@
 // for (let i = 1; i <= 1000; i++) {
 //   let sum = 0;
 //   for (let j = 1; j < i; j++) {
-//     if (i % j == 0) sum += j;
+//     if (i % j === 0) sum += j;
 //   }
-//   if (sum == i || i == 1) console.log(i);
+//   if (sum === i) console.log(i);
 // }
 
 
@@ -268,7 +268,7 @@
 //   return ++arr.length;
 // }
 
-// console.log(missingPositiveInteger([1, 2, 3]));
+// console.log(missingpositiveInteger([1, 2, 3]));
 
 
 
@@ -286,8 +286,27 @@
 
 
 
-let numbers = (start, stop, step) =>
- Array.from({length: Math.ceil((stop - start) / step)},
- (_, i) => start + i * step);
+// let numbers = (start, stop, step) =>
+//  Array.from({length: Math.ceil((stop - start) / step)},
+//  (_, i) => start + i * step);
 
-console.log(numbers(1, 10, 2));
+// console.log(numbers(1, 10, 2));
+
+
+
+// function numEncodings(s) {
+//   if (s.startsWith('0')) return 0;
+//   else if (s.length <= 1) return 1;
+//   let total = 0;
+//   console.log("first", total);
+//   console.log("first", s);
+//   if (Number(s.slice(0, 2) <= 26)) total += numEncodings(s.slice(2));
+//   console.log("second", total);
+//   console.log("second", s);
+//   total += numEncodings(s.slice(1));
+//   console.log("third", total);
+//   console.log("third", s);
+//   return total;
+// }
+
+// console.log(numEncodings("111"))
