@@ -327,3 +327,10 @@ function car(p) {
     return p(f);
 }
 
+function cdr(p) {
+    function f(a, b) {
+        return b;
+    }
+    return p(f);
+}
+
