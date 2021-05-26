@@ -320,3 +320,10 @@ function cons(a, b) {
     return pair;
 }
 
+function car(p) {
+    function f(a, b) {
+        return a;
+    }
+    return p(f);
+}
+
