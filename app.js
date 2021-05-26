@@ -334,3 +334,5 @@ function cdr(p) {
     return p(f);
 }
 
+console.log(car(cons(3, 4)));
+console.log(cdr(cons(3, 4)));
