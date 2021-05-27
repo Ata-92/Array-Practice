@@ -320,18 +320,19 @@ function cons(a, b) {
     return pair;
 }
 
-function car(p) {
-    function f(a, b) {
-        return a;
-    }
-    return p(f);
+function car(pair) {
+    // function f(a, b) {
+    //     return a;
+    // }
+    return pair((a, b) => a);
 }
 
-function cdr(p) {
-    function f(a, b) {
-        return b;
-    }
-    return p(f);
+function cdr(pair) {
+    // function f(a, b) {
+    //     return b;
+    // }
+    const f = (a, b) => {return b};
+    return pair(f);
 }
 
 console.log(car(cons(3, 4)));
