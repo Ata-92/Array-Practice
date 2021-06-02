@@ -313,27 +313,42 @@
 
 
 
-function cons(a, b) {
-    function pair(f) {
-        return f(a, b);
-    }
-    return pair;
+// function cons(a, b) {
+//     function pair(f) {
+//         return f(a, b);
+//     }
+//     return pair;
+// }
+
+// function car(pair) {
+//     // function f(a, b) {
+//     //     return a;
+//     // }
+//     return pair((a, b) => a);
+// }
+
+// function cdr(pair) {
+//     // function f(a, b) {
+//     //     return b;
+//     // }
+//     const f = (a, b) => {return b};
+//     return pair(f);
+// }
+
+// console.log(car(cons(3, 4)));
+// console.log(cdr(cons(3, 4)));
+
+
+
+const s = "de";
+const set = ["dog", "deer", "deal"];
+let result = [];
+
+function autocomplete () {
+  for (const string of set) {
+      string.startsWith(s) && result.push(string);
+  }
+  return result;
 }
 
-function car(pair) {
-    // function f(a, b) {
-    //     return a;
-    // }
-    return pair((a, b) => a);
-}
-
-function cdr(pair) {
-    // function f(a, b) {
-    //     return b;
-    // }
-    const f = (a, b) => {return b};
-    return pair(f);
-}
-
-console.log(car(cons(3, 4)));
-console.log(cdr(cons(3, 4)));
+console.log(autocomplete());
