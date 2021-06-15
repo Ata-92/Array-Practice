@@ -340,15 +340,25 @@
 
 
 
-const s = "de";
-const set = ["dog", "deer", "deal"];
-let result = [];
+// const s = "de";
+// const set = ["dog", "deer", "deal"];
+// let result = [];
 
-function autocomplete () {
-  for (const string of set) {
-      string.startsWith(s) && result.push(string);
-  }
-  return result;
+// function autocomplete () {
+//   for (const string of set) {
+//       string.startsWith(s) && result.push(string);
+//   }
+//   return result;
+// }
+
+// console.log(autocomplete());
+
+
+
+let brackets = prompt("Enter brackets : ");
+
+while (brackets.includes("()") || brackets.includes("[]") || brackets.includes("{}")) {
+  brackets = brackets.replace("()", "").replace("[]", "").replace("{}", "");
 }
 
-console.log(autocomplete());
+brackets ? console.log(false) : console.log(true);
