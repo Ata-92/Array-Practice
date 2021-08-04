@@ -355,10 +355,32 @@
 
 
 
-let brackets = prompt("Enter brackets : ");
+// let brackets = prompt("Enter brackets : ");
 
-while (brackets.includes("()") || brackets.includes("[]") || brackets.includes("{}")) {
-  brackets = brackets.replace("()", "").replace("[]", "").replace("{}", "");
+// while (brackets.includes("()") || brackets.includes("[]") || brackets.includes("{}")) {
+//   brackets = brackets.replace("()", "").replace("[]", "").replace("{}", "");
+// }
+
+// brackets ? console.log(false) : console.log(true);
+
+
+
+function sort(array) {
+  const sortedArray = [array[0]]
+  for (let i = 1; i < array.length; i++) {
+      for (let j = 0; j < sortedArray.length; j++) {
+          if (array[i] <= sortedArray[j]) {
+              sortedArray.splice(j, 0, array[i])
+              break
+          }
+          else if (j === sortedArray.length - 1) {
+              sortedArray.push(array[i])
+              break
+          }
+      }
+  }
+  return sortedArray
 }
 
-brackets ? console.log(false) : console.log(true);
+arr = [1, 2, -10, 3, 12, 4, -3, 6, 5]
+console.log(sort(arr))
