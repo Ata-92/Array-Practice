@@ -384,3 +384,16 @@ function sort(array) {
 
 arr = [1, 2, -10, 3, 12, 4, -3, 6, 5]
 console.log(sort(arr))
+
+
+
+function sum(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+    return sum;
+}
+
+arr = [1, 5, 3, 2, 6, 4]
+console.log(sum(arr))
